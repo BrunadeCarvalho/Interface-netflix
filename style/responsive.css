@@ -1,0 +1,29 @@
+@media screen and (max-width:700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .container h1{
+        padding: 0;
+    }
+    .home{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pesquisa{
+        display: none;
+    }
+    
+    .botao{
+        width: 5vw;
+        display: flex;
+        margin-top: 5px;
+        width: 40%;
+        font-size: 15px;
+        padding-left: 8%;
+    }
+}

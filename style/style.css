@@ -1,0 +1,160 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/BebasNeue-Regular.ttf)
+ }
+
+body{
+    background: var(--preta);
+    color: white;  
+}
+
+header{
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header .container{
+    display: flex;
+    min-width: 50vw;
+    align-items: center;
+}
+
+.container h1{
+    font-family: Bebas;
+    color: #E50914;
+    padding: 0 3% 0 1%;
+    font-size: 3rem;
+
+}
+
+.home{
+    display: flex;
+
+}
+
+.pesquisa{
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.pesquisa i{
+    padding: 0 0.5%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-family: sans-serif;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.perfil i{
+ padding: 0 10px; 
+ cursor: pointer;
+}
+
+
+/* filme principal: */
+
+.filme-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-supernatural.jpg');
+    height: 60vh;
+    background-size: cover;
+}
+
+.filme-principal .descricao{
+    margin: 0 0 5% 1%;
+    width: 70%;
+    font-family: sans-serif;
+}
+
+.titulo{
+    margin: 30% 0 2% 1%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 1%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease-in-out ;
+    font-family: sans-serif;
+    width: 22%;
+
+}
+
+.botao:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5%;
+}
+
+/* lista de filmes */
+img{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 2%;
+    opacity: 0.4 red;
+
+}
+.item{
+    width: 100%;
+}
+
+.item img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    opacity: 0.4;
+}
+
+.item img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.categoria{
+    font-family: sans-serif;
+    padding: 10px 0;
+    margin-left: 1%;
+}
+
+.owl-carousel{
+    margin-top: 5px;
+}
+
